@@ -6,14 +6,14 @@ fetch("https://jsonplaceholder.typicode.com/posts")
     for (const post of posts) {
       let li = document.createElement("li");
       li.innerText = post.id + " " + post.title;
-      let btn = document.createElement("button");
-      btn.innerText = 'clic'
-      btn.onclick = function(){
-        console.log('dfd')
-      }
+
+      let a = document.createElement("a");
+      a.innerText = '  details';
+      a.href = 'details.html?data=' + JSON.stringify(post)
+      
 
 
-      li.appendChild(btn);
+      li.appendChild(a);
       ul.appendChild(li);
     }
 
