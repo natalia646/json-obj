@@ -8,4 +8,11 @@ h1.innerText = `${post.id} ${post.title}`;
 let p = document.createElement('p');
 p.textContent = post.body;
 
-document.body.append(h1, p )
+
+
+let btn = document.createElement('button');
+btn.innerText = 'add to favorite';
+
+
+
+document.body.append(h1, p, btn)
