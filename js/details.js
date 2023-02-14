@@ -14,7 +14,7 @@ btn.innerText = "add to favorite";
 btn.onclick = function () {
   let favPostsFromLS = localStorage.getItem("favPosts");
   if (favPostsFromLS === null) {
-    localStorage.setItem("favPosts", JSON.stringify([]));
+    localStorage.setItem("favPosts", JSON.stringify([post]));
     
   }
 
